@@ -22,11 +22,18 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
 
-### Framework & Library  
+### Backend & Web  
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=spring&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![JDBC](https://img.shields.io/badge/JDBC-007396?style=flat&logo=java&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA-59666C?style=flat&logo=hibernate&logoColor=white)
+![JSP](https://img.shields.io/badge/JSP-007396?style=flat&logo=java&logoColor=white)
+![MyBatis](https://img.shields.io/badge/MyBatis-000000?style=flat&logo=mybatis&logoColor=white)
+
+### Frontend  
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vuedotjs&logoColor=white)
 
 ### Database & Cloud  
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
@@ -39,6 +46,17 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
+
+### AI & LLM & Data  
+![ChatGPT](https://img.shields.io/badge/ChatGPT-74AA9C?style=flat&logo=openai&logoColor=white)
+![Codex](https://img.shields.io/badge/OpenAI%20Codex-000000?style=flat&logo=openai&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude-222222?style=flat&logo=anthropic&logoColor=white)
+![Claude CLI](https://img.shields.io/badge/Claude%20CLI-222222?style=flat&logo=anthropic&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat&logo=googlegemini&logoColor=white)
+![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-4285F4?style=flat&logo=googlegemini&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white)
+![Fine-tuning](https://img.shields.io/badge/Fine--tuning-5C2D91?style=flat&logo=azuredevops&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG%20(Vector%20Search)-FF6F00?style=flat&logo=elastic&logoColor=white)
 
 ---
 
@@ -65,28 +83,25 @@
   </tr>
 </table>
 
-
-
 <br>
 
 ---
 
 ### 2. 📚 Sequence: 개발자들을 위한 프로젝트 관리 및 협업 플랫폼
 
-➡️ **[레포지토리 바로가기](https://github.com/UDR-Sequence/sequence-backend)**
+➡️ **[레포지토리 바로가기](https://github.com/UDR-Sequence/sequence-backend)**  
 
-➡️ **[배포된 사이트 바로가기](https://sequence-zeta.vercel.app/)**
+➡️ **[배포된 사이트 바로가기](https://sequence-zeta.vercel.app/)**  
 
-➡️ **[포트폴리오 상세설명 바로가기](https://github.com/Jaeboong/portfolio/blob/main/project/SEQUENCE.md)**
+➡️ **[포트폴리오 상세설명 바로가기](https://github.com/Jaeboong/portfolio/blob/main/project/SEQUENCE.md)**  
 
 <br>
 
 **Sequence**는 프로젝트 팀원을 구하는 것부터 시작해, 아이디어 공유, 일정 관리, 그리고 프로젝트 아카이빙까지 **개발 협업의 전 과정을 지원하는 플랫폼**입니다. 체계적인 프로젝트 관리를 통해 개발 생산성을 높이고, 완성된 프로젝트를 포트폴리오로 기록하여 개발자로서의 성장을 돕습니다.
 
-
-- **Project 3**: https://github.com/OnelineBookClass/Backend
-- **Project 4**: https://github.com/Jaeboong/wordMemorizing
-- **Project 5**: https://github.com/Live-Healthy-Die-Healthy/BackEnd
+- **Project 3**: https://github.com/OnelineBookClass/Backend  
+- **Project 4**: https://github.com/Jaeboong/wordMemorizing  
+- **Project 5**: https://github.com/Live-Healthy-Die-Healthy/BackEnd  
 
 ---
 
