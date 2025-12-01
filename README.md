@@ -5,9 +5,9 @@
 ## 📊 Github Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Jaeboong&show_icons=true&theme=default" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jaeboong&layout=compact&theme=default" height="180"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Jaeboong&theme=default" height="180"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Jaeboong&show_icons=true&theme=default" height="180" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Jaeboong&layout=compact&theme=default" height="180" />
+  <img src="https://streak-stats.demolab.com?user=Jaeboong&theme=default" height="180" />
 </p>
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=Jaeboong&color=blue)
