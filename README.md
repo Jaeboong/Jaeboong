@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=B897FF&height=200&section=header&text=JaeHwan's%20Github%20Portfolio&fontSize=30)
+![header](https://capsule-render.vercel.app/api?type=waving&color=B897FF&height=200&section=header&text=Jaeboong's%20Github%20Portfolio&fontSize=30)
 
 ## 📊 Github Stats
 
