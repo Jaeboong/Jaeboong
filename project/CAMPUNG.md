@@ -1,79 +1,52 @@
-# 🏫 Campung: AI 기반 차세대 캠퍼스 커뮤니티
+# Campung — 위치 기반 캠퍼스 커뮤니티
 
-> 실시간 감정 분석, 위치 공유, AI 랜드마크 요약으로 캠퍼스 라이프를 혁신합니다.
+> 지도 기반 현장 정보와 게시판 기록을 연결하고, 캠퍼스 활동과 감정 분석 결과를 온도·날씨로 보여주는 커뮤니티 서비스
 
-<br/>
+- **개발 기간**: 2025.08.13 – 2025.08.31
+- **인원**: 5명
+- **역할**: 백엔드·인프라 단독 담당
+- **성과**: 신한은행 해커톤 with SSAFY 대상
+- **Repository**: [Jaeboong/Campung_Backend](https://github.com/Jaeboong/Campung_Backend)
 
-<br/>
+## 문제와 접근
 
-## 주요 기능 (Key Features)
+기존 텍스트 게시판은 캠퍼스에서 지금 일어나는 일과 전체 분위기를 직관적으로 전달하기 어려웠습니다. 지도와 게시판 데이터를 연결하고, 게시글 활동량과 감정 분석 결과를 하나의 온도 지표로 표현했습니다.
 
-* **AI 기반 캠퍼스 감정 분석**: **OpenAI의 GPT-5**를 활용해 캠퍼스 내 게시글의 감정을 실시간으로 분석하고 '온도'와 '날씨'로 시각화하여 보여줍니다.
-* **실시간 위치 공유 및 주변 알림**: **Geohash**와 **WebSocket** 기술을 통해 친구와 실시간으로 위치를 공유하고, 주변의 새로운 소식을 즉시 알려주는 동적인 소셜 경험을 제공합니다.
-* **HOT 게시글 시스템**: **Redis**의 실시간 캐싱을 활용하여 24시간 동안 가장 인기 있는 게시글을 동적으로 선정하고 보여줍니다.
-* **AI 랜드마크 요약**: 캠퍼스 내 주요 건물이나 장소에 대한 게시글을 AI가 분석하고 요약하여, 방문하지 않고도 그곳의 분위기를 파악할 수 있습니다.
-* **안전하고 편리한 소셜 기능**: **Spring Security**와 **FCM**을 기반으로 친구 관계, 실시간 채팅, 맞춤형 알림 등 안전하고 다채로운 소셜 기능을 제공합니다.
-* **안정적인 클라우드 인프라**: **AWS S3**를 통한 미디어 파일 관리, **Docker**와 **GitHub Actions**를 이용한 CI/CD 파이프라인 구축으로 안정적이고 효율적인 서비스 운영을 보장합니다.
+## 담당 영역
 
----
+### 백엔드
 
-## 아키텍처 (Architecture)
+- Java 17·Spring Boot 3 기반 REST API 설계 및 구현
+- 게시글·랜드마크·파일·사용자 관련 데이터 모델과 API 구성
+- MariaDB 영속 데이터와 Redis 실시간 조회 구조 분리
+- 이미지·녹음 파일을 Content-Type에 따라 AWS S3 경로로 분류
 
-📦 Campung Fullstack Architecture
-```
-┌────────────────┐      ┌─────────────────┐      ┌─────────────┐
-│ Android App    │◀──▶│   Spring Boot   │◀───▶│  MariaDB    │
-│(Kotlin/Compose)│      │     Backend     │      │  (Main DB)   │
-└────────────────┘      └─────────────────┘      └─────────────┘
-▲                          │ ▲                      │
-│ FCM Push                 │ │ REST API             │ Redis (Cache)
-▼                          │ ▼                      ▼
-┌──────────────┐      ┌───────────────┐      ┌─────────────┐
-│ Firebase FCM │◀──▶│     AWS S3    │      │ OpenAI GPT-5│
-│ (알림 시스템) │      │ (미디어 저장소)│      │ (AI 분석)   │
-└──────────────┘      └───────────────┘      └─────────────┘
-```
----
+### 실시간 집계
 
-## 🛠️ 기술 스택 (Tech Stack)
+- Redis 24시간 슬라이딩 윈도우 기반 HOT 게시글 집계
+- 게시글 활동량의 상승·하강 방향과 시간대별 보정값을 반영한 캠퍼스 온도 계산
+- 0도와 100도 부근에서 급격한 변화를 줄이는 보호 계수 적용
 
-### **Backend**
+### AI 활용
 
-* **Framework**: Spring Boot, Spring Security
-* **Language**: Java 17
-* **Database**: MariaDB, Redis
-* **AI**: OpenAI GPT-5 API
-* **Cloud Infra**: AWS S3, Firebase Cloud Messaging (FCM)
-* **Real-time**: WebSocket
-* **ORM**: JPA/Hibernate with QueryDSL
-* **API Documentation**: Swagger/OpenAPI
-* **Build & Deploy**: Gradle, Docker Compose, GitHub Actions CI/CD
+- 게시글 감정 분석 결과를 캠퍼스 온도와 날씨로 변환
+- 게시글 목록을 직접 읽지 않아도 현재 분위기를 파악할 수 있는 지표 제공
 
-### **Android**
+### 인프라
 
-* **Language**: Kotlin
-* **UI**: Jetpack Compose
-* **Architecture**: MVVM (Model-View-ViewModel), Hilt (DI)
-* **Async**: Coroutines, Flow
-* **Networking**: Retrofit2, OkHttp3
-* **Database**: Room
-* **Map**: Naver Maps SDK
-* **Real-time**: WebSocket, FCM
+- Docker 기반 실행 환경 구성
+- GitHub Actions·SSH 기반 자동 배포
+- 배포 후 헬스체크를 이용한 실행 상태 검증
 
----
+## 결과와 배운 점
 
-## 핵심 기능 상세 (Core Feature Details)
+- 백엔드와 인프라를 단독으로 구축해 제한된 해커톤 기간 내 서비스 완성
+- 활동량·감정 분석을 사용자에게 이해하기 쉬운 서비스 지표로 변환
+- 실시간 데이터, 영속 데이터와 파일 저장소를 목적별로 분리
+- 신한은행 해커톤 with SSAFY 대상 수상
 
-### **1. AI 기반 캠퍼스 감정 분석 시스템**
+## 기술 스택
 
-> 캠퍼스의 실시간 감정 상태를 '온도'와 '날씨'로 측정하는 세계 최초의 시스템
+`Java 17` `Spring Boot 3` `JPA` `MariaDB` `Redis` `AWS S3` `Docker` `GitHub Actions` `OpenAI API`
 
-**동작 원리**
-1.  **데이터 수집**: `EmotionAnalysisScheduler`가 매시간 정각, 최근 1시간 동안 작성된 모든 게시글을 수집합니다.
-2.  **AI 감정 분석**: 수집된 텍스트를 `EmotionPromptBuilder`로 가공하여 **GPT-5 API**에 전송, 6가지 감정(우울함, 밝음, 신남, 화남, 슬픔, 흥분) 점수를 추출합니다.
-3.  **온도 및 날씨 변환**: `EmotionCalculatorService`가 감정 점수를 통계 처리하여 '감정 날씨'를 결정하고, `CampusTemperatureManager`는 사용자 활동량까지 종합하여 '캠퍼스 온도'를 계산합니다.
-
-```java
-// 감정 분석 파이프라인 예시
-// 텍스트 → GPT-5 분석 → 6차원 감정 점수 → 온도 변환 → 날씨 매핑
-// EmotionAnalysisService -> E
+[← 프로필로 돌아가기](../README.md)
