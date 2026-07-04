@@ -121,9 +121,3 @@ Play Store와 App Store에 배포한 TODO 앱의 백엔드 개발에 참여하�
 - **고려대학교 세종캠퍼스** · 컴퓨터융합소프트웨어학과 학사 `2019.03 – 2025.08`
 - **SQLD** · 한국데이터산업진흥원 `2024.09`
 - **OPIc IM2** `2026.03`
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Jaeboong&show_icons=true&hide_border=true&title_color=5394F6&icon_color=5394F6)
-
-</div>
