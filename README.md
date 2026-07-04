@@ -22,7 +22,7 @@
 
 ### 자소전 — 멀티에이전트 자기소개서 작성 지원 서비스
 
-[Repository](https://github.com/Jaeboong/Jasojeon) · [Service](https://xn--9l4b13i8j.com)
+[Repository](https://github.com/Jaeboong/Jasojeon) · [Service](https://xn--9l4b13i8j.com) · **[프로젝트 상세보기](project/JASOJEON.md)**
 
 지원자가 여러 문서와 사이트를 오가며 수행하던 **공고 분석 → 기업 조사 → 경험 연결 → 작성 → 검토** 과정을 하나의 AI 워크플로우로 재설계했습니다.
 
@@ -37,7 +37,7 @@
 
 ### TODO 앱 AI 인프라 어시스턴트 (DoitDo)
 
-[NanoClaw Fork](https://github.com/Jaeboong/nanoclaw/tree/doitdo)
+[NanoClaw Fork](https://github.com/Jaeboong/nanoclaw/tree/doitdo) · **[프로젝트 상세보기](project/DOITDO_AI_INFRA.md)**
 
 Play Store와 App Store에 배포한 TODO 앱의 백엔드 개발에 참여하고, 인프라 담당자에게 집중된 운영 업무를 팀이 자연어로 수행할 수 있도록 NanoClaw를 커스텀해 도입했습니다.
 
@@ -52,7 +52,7 @@ Play Store와 App Store에 배포한 TODO 앱의 백엔드 개발에 참여하�
 
 ### Campung — 위치 기반 캠퍼스 커뮤니티
 
-[Backend Repository](https://github.com/Jaeboong/Campung_Backend) · **신한은행 해커톤 with SSAFY 대상**
+[Backend Repository](https://github.com/Jaeboong/Campung_Backend) · **[프로젝트 상세보기](project/CAMPUNG.md)** · **신한은행 해커톤 with SSAFY 대상**
 
 - 5인 팀에서 백엔드·인프라 단독 담당
 - Redis 24시간 슬라이딩 윈도우 기반 HOT 게시글 실시간 집계
@@ -65,7 +65,7 @@ Play Store와 App Store에 배포한 TODO 앱의 백엔드 개발에 참여하�
 
 ### HearBe — 시각장애인 음성 쇼핑 지원 서비스
 
-[Repository](https://github.com/Jaeboong/hearbe)
+[Repository](https://github.com/Jaeboong/hearbe) · **[프로젝트 상세보기](project/HEARBE.md)**
 
 - 규칙 기반 즉시 응답과 KoELECTRA 분류를 결합한 음성 명령 NLU 파이프라인 설계
 - 회원가입·결제·환불 등 쇼핑 명령 의도 분류, 평균 응답시간 **23ms** 달성
@@ -76,7 +76,7 @@ Play Store와 App Store에 배포한 TODO 앱의 백엔드 개발에 참여하�
 
 ### MOA — 금융 Open API 기반 목표·예산 관리 서비스
 
-[Repository](https://github.com/Jaeboong/MOA)
+[Repository](https://github.com/Jaeboong/MOA) · **[프로젝트 상세보기](project/MOA.md)**
 
 - 외부 금융 API와 로컬 DB의 계좌·거래 데이터를 동기화하는 정합성 로직 구현
 - 월간 수입을 목표·고정비·주간 예산으로 배분하고 부족분을 자동 조정하는 흐름 설계
@@ -121,9 +121,3 @@ Play Store와 App Store에 배포한 TODO 앱의 백엔드 개발에 참여하�
 - **고려대학교 세종캠퍼스** · 컴퓨터융합소프트웨어학과 학사 `2019.03 – 2025.08`
 - **SQLD** · 한국데이터산업진흥원 `2024.09`
 - **OPIc IM2** `2026.03`
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Jaeboong&show_icons=true&hide_border=true&title_color=5394F6&icon_color=5394F6)
-
-</div>
